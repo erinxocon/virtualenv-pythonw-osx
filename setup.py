@@ -24,10 +24,6 @@ setup(
         'Programming Language :: Python :: 3.4',
     ],
     packages=['install_pythonw'],
-    entry_points={
-        'console_scripts': ['fix-osx-virtualenv = install_pythonw:run_main'],
-    },
-    package_data={'install_pythonw': [
-        'pythonw.c',
-    ]},
+    entry_points={'console_scripts': ['fix-osx-virtualenv = install_pythonw:run_main']},
+    package_data={'install_pythonw': ['pythonw.c']},
 )
